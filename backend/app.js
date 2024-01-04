@@ -18,7 +18,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 //routes
-readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
+readdirSync('./routes').map((route) => app.use('', require('./routes/' + route)))
 
 const server = () => {
     db()
