@@ -11,7 +11,7 @@ const PORT = process.env.PORT
 //middlewares
 app.use(express.json())
 app.use(cors(
-    origin:["https://expenses-analyser-api.vercel.app/"],
+    origin:["https://expenses-analyser.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 ))
