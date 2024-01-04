@@ -10,7 +10,11 @@ const PORT = process.env.PORT
 
 //middlewares
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    origin:["https://expenses-analyser-api.vercel.app/"],
+    methods:["POST","GET"],
+    credentials:true
+))
 
 //routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
