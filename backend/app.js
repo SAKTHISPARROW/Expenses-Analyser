@@ -9,13 +9,7 @@ require('dotenv').config()
 const PORT = process.env.PORT
 
 //middlewares
-app.use(express.json())
-const corsOptions = {
-  origin: 'https://expenses-analyser.vercel.app/',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 //routes
 readdirSync('./routes').map((route) => app.use('', require('./routes/' + route)))
