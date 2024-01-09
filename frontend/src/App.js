@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import styled from 'styled-components';
 import bg from './img/bg.png';
 import { MainLayout } from './styles/layout';
-import Orb from './components/orb/orb';
 import Navigation from './components/navigation/navigation';
 import Dashboard from './components/dashboard/dashboard';
 import Income from './components/income/income';
