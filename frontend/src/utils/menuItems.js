@@ -9,8 +9,8 @@ export const menuItems = [
     },
     {
         id: 2,
-        title: "View Transactions",
-        icon: transactions,
+        title: "Savings",
+        icon: piggy,
         link: "/dashboard",
     },
     {
