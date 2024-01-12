@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useGlobalContext } from '../../context/globalcontext';
-import History from '../history/history';
 import { InnerLayout } from '../../styles/layout';
 import { dollar } from '../../utils/icons';
 
