@@ -41,7 +41,6 @@ function Dashboard() {
                         </div>
                     </div>
                     <div className="history-con">
-                        <History />
                         <h2 className="salary-title">Min <span>Salary</span>Max</h2>
                         <div className="salary-item">
                             <p>
